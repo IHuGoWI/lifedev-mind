@@ -8,11 +8,21 @@ const Navbar = () => {
 
   return (
     <>
+
     <nav className={styles.navbar}>
-    <p>{user.name}</p>
-    <p>{user.idade}</p>
-    <button onClick={() => setUser((prevUser) => ({...prevUser, idade: prevUser.idade +1}))} >Aumenta a idade</button>
+      <ul className={styles.link_list}>
+        <li>Home</li>
+        <li>Register</li>
+        <li>New Post</li>
+        <li>Dashboard</li>
+        <li>About us</li>
+        <li>
+          <button className={styles.logout}>Exit</button>
+        </li>
+      </ul>
+
     </nav>
+
     </>
   )
 }

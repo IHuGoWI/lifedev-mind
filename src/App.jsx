@@ -1,6 +1,7 @@
 import './App.css'
-
-import Navbar from '../lifedev-mind/src/components/Navbar'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home/Home'
 
 function App() {
   
@@ -8,6 +9,8 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Home/>
+    <Footer/>
     </>
   )
 }

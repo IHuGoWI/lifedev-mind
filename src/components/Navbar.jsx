@@ -1,27 +1,37 @@
-import React from 'react'
-import { useState } from 'react'
-import styles from './Navbar.module.css'
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [user, setUser] = useState({ name: 'Geysa', idade: 32 })
-
   return (
     <>
-      <nav className={styles.navbar}>
-        <ul className={styles.link_list}>
-          <li>Home</li>
-          <li>Register</li>
-          <li>New Post</li>
-          <li>Dashboard</li>
-          <li>About Us</li>
+      <nav className="bg-zinc-800">
+        <ul className="px-36 py-2 flex gap-16 items-center justify-center">
+          <NavLink
+            to="/"
+            className=""
+          >
+            <li className="text-blue-600 font-extrabold text-2xl">
+              <span className="text-white">Life</span>Dev
+            </li>
+          </NavLink>
+          <NavLink
+            to="/login"
+            className=""
+          >
+            <li className="text-white hover:text-blue-600 transition duration-300">Login</li>
+          </NavLink>
+          <NavLink
+            to="/register"
+            className=""
+          >
+            <li className="text-white hover:text-blue-600 transition duration-300">Register</li>
+          </NavLink>
           <li>
-            <button className={styles.logout}>Exit</button>
+            <button className="py-2 px-4 text-white rounded-lg cursor-pointer bg-blue-600 hover:text-black transition duration-300">Exit</button>
           </li>
         </ul>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

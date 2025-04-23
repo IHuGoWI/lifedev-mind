@@ -17,5 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LIFEDEV_TOPPAN }}
-          projectId: lifedev-toppan
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LIVEDEV_HUGO }}
+          projectId: livedev-hugo

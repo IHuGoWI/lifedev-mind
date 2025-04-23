@@ -1,22 +1,21 @@
-
-import { initializeApp } from "firebase/app"
-import { getAnalytics } from "firebase/analytics"
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
-
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAH4oxvwsKyXLz2CZnWSU74ecEDydCMZcY",
-  authDomain: "lifedev-toppan.firebaseapp.com",
-  projectId: "lifedev-toppan",
-  storageBucket: "lifedev-toppan.firebasestorage.app",
-  messagingSenderId: "1001517255216",
-  appId: "1:1001517255216:web:8f2d6079569557e8333bf5",
-  measurementId: "G-S7SLSTH6FP"
-}
+  apiKey: "AIzaSyBT0noPKKaD5PnYIxLmdXV1Z2cZ-YqxfF0",
+  authDomain: "livedev-hugo.firebaseapp.com",
+  projectId: "livedev-hugo",
+  storageBucket: "livedev-hugo.firebasestorage.app",
+  messagingSenderId: "884214768359",
+  appId: "1:884214768359:web:92c9af9fa1b146a3373842",
+  measurementId: "G-0RHRDY588F",
+};
 
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getFirestore(app);
+const auth = getAuth(app);
 
-const app = initializeApp(firebaseConfig)
-const analytics = getAnalytics(app)
-const db = getFirestore(app)
-
-export { db }
+export { db, auth };

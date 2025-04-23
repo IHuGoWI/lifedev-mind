@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
     <>
-    <footer className={styles.footer}>
-        <h3>Plataforma de Postagens para Desenvolvedores</h3>
-        <p>Compartilhamento de experiências de Nomade Life Dev</p>
-        <p>MindTrade Education &#174; 2025 &#169;</p>
+    <footer className='bg-zinc-800'>
+        <div className='container mx-auto px-4 py-8 text-white'>
+          <h3>Plataforma de Postagens para Desenvolvedores</h3>
+          <p>Compartilhamento de experiências de Nomade Life Dev</p>
+          <p>MindTrade Education &#174; 2025 &#169;</p>
+        </div>
     </footer>
     </>
   )
